@@ -1,0 +1,309 @@
+.nav-link {
+    color: #fff ;
+    right: 0;
+}
+.navbar-brand{
+    left: 0;
+    font-size: 50px;
+    color: darkgoldenrod;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline;
+}
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/*----------footer-----------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color:  #000000;
+
+}
+
+.footer h5{
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.icons .fa{
+    color:darkgoldenrod;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 50px;
+}
+.footer p {
+    font-size: 20px;
+
+}
+
+.myOffer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/Banner2.png);
+    background-repeat: no-repeat;
+    
+}
+h3{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{   
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: #fff;
+
+
+}
+.offer-col h5{
+    color: darkgoldenrod;
+}
+.General-Skills{
+    padding: 0;
+    margin: 0;
+}
+.Programming-Skills{
+    padding: 0;
+    margin: 0;
+}
+.Unreal-Skills{
+    padding: 0;
+    margin: 0;
+    
+}
+.General-Skills li{
+    font-size: 20px;
+   text-align:  center;
+}
+.Programming-Skills li {
+    font-size: 20px;
+    text-align:  center;
+}
+.Unreal-Skills li {
+    font-size: 20px;
+    text-align:  center;
+}
+.offer-col li {
+    list-style: none;
+}
+
+h4{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    text-decoration: underline;
+    font-size: 50px;
+}
+.offer-col:hover{
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.2) ;
+
+}
+
+.footer2{
+    text-align: center;
+    background-color: #000000;
+    font-size: 50px;
+    color: darkgoldenrod;
+}
+
+.footer2 .fa{
+    color: darkgoldenrod;
+}
+.footer2 p {
+    font-size: 20px;
+    color:#ffffff;
+}
+
+.Home-footer .footer1 p{
+    color: darkgoldenrod;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.Home-footer .footer1 h4{
+    color:darkgoldenrod ;
+}
+
+
+/*---- main ---*/
+
+.text-box{
+    align-items: center;
+    text-align: center;
+    padding: 30%;
+}
+.text-box h2{
+    color: #ffffff;
+    font-size: 40px;
+}
+.text-box h1{
+    color: #ffffff;
+    font-size: 100px;
+}
+.text-box p{
+    color: #ffffff;
+    font-size: 35px;
+}
+ #home{
+    display: flex;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(4,9,30,0.7)), url(Images/Controller.jpg);
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+
+#about{
+    display: flex;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url(Images/coding1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+#project{
+
+    display: flex;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url(Images/Controller2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+  footer{
+    background-color: #000000;
+  }
+
+/*---- About me ----*/
+
+.Skills h5, .About-Me h5{
+    color: darkgoldenrod;
+    font-size: 60px;
+}
+
+.About-Me p{
+    text-align: left;
+    font-size: 30px;
+    line-height: 40px;
+}
+.Skills .skill-header{
+    font-size: 30px;
+    color: darkgoldenrod;
+
+}
+
+.Skills .skill-notes{
+    text-align: left;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+
+.container2{
+    width: 100%;
+    overflow: hidden;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    animation: animate 1000s linear infinite;
+}
+@keyframes animate{
+
+    0%{
+        transform: perspective(2000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(2000px) rotateY(360deg);
+    }
+}
+
+.image-box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(800px);   
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004 );
+}
+
+.image-box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.image-box img.paused {
+    animation-play-state: paused;
+ }
+
+  .image-box span embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.image-box span video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.image-box.is-flipped {
+    transform: rotateY(180deg);
+}
