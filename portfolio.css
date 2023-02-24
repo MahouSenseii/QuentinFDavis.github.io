@@ -2,12 +2,25 @@
     color: #fff ;
     right: 0;
 }
+
+.nav-link:hover{
+    color: darkgoldenrod;
+}
 .navbar-brand{
     left: 0;
     font-size: 50px;
     color: darkgoldenrod;
     font-family: "Times New Roman", Times, serif;
     text-decoration: underline;
+}
+
+.navbar-toggler-icon{
+    color: #ffffff;
+    background-color: darkgoldenrod;
+}
+
+.navbar-toggler{
+    color: #ffffff;
 }
 .text-box {
     display: flex;
@@ -43,7 +56,7 @@
 }
 
 .myOffer{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -152,9 +165,7 @@ h4{
 /*---- main ---*/
 
 .text-box{
-    align-items: center;
-    text-align: center;
-    padding: 30%;
+    padding: 5%;
 }
 .text-box h2{
     color: #ffffff;
@@ -171,7 +182,7 @@ h4{
  #home{
     display: flex;
     background-color: #000000;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(4,9,30,0.7)), url(Images/Controller.jpg);
+    background-image: linear-gradient(rgba(19, 19, 19, 0.7),rgba(4,9,30,0.7)), url(Images/Controller.jpg);
     background-position: center;
     justify-content: center;
     position: relative;
@@ -181,7 +192,7 @@ h4{
 #about{
     display: flex;
     background-color: #000000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url(Images/coding1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url(Images/codiing3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
@@ -212,16 +223,21 @@ h4{
 .Skills h5, .About-Me h5{
     color: darkgoldenrod;
     font-size: 60px;
+    text-align: center;
 }
 
 .About-Me p{
     text-align: left;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 3vh;
+    padding-left: 65px;
+
 }
 .Skills .skill-header{
     font-size: 30px;
     color: darkgoldenrod;
+    list-style: none;
+    padding-left: 30px;
 
 }
 
@@ -246,7 +262,7 @@ h4{
     width: 400px;
     height: 400px;
     transform-style: preserve-3d;
-    animation: animate 1000s linear infinite;
+    animation: animate 100s linear infinite;
 }
 @keyframes animate{
 
@@ -284,26 +300,87 @@ h4{
     animation-play-state: paused;
  }
 
-  .image-box span embed{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 
-}
-
-.image-box span video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
 
 .image-box.is-flipped {
     transform: rotateY(180deg);
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .text-box h2{
+        font-size: 20px;
+    }
+    .text-box p{
+        font-size: 15px;
+    }
+    .footer1 .myOffer p{
+        font-size: 30px;
+    }
+    .myOffer{
+        text-align: center;
+    }
+    .Skills .skill-notes{
+        font-size: 15px;
+    }
+
+    .text-box{
+        text-align: center;
+        padding-top: 30%;
+    }
+    .skill-notes{
+        text-align: center;
+    }
+
+    .Skills{
+        font-size: 20px;
+        
+    }
+    .About-Me{
+        font-size: 20px;
+    }
+    .About-Me p{
+        font-size: 15px;
+    }
+    .break{
+        display: none;
+    }
+    .Aboutheader{
+        min-height: 300vh;
+    }
+
+    .About-Me{
+        font-size:  20px;
+        text-align: center;
+
+
+    }
+    .About-Me p{
+        text-align: center;
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .All-Skills{
+        font-size: 20px;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .All-Skills .skill-notes{
+        list-style: none;
+        font-size: 20px;
+    }
+    .All-Skills .skill-header{
+        font-size: 30px;
+    }
+    .offer-col{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    
+
 }
