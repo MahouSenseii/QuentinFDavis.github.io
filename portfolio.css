@@ -160,12 +160,14 @@ h4{
 .Home-footer .footer1 h4{
     color:darkgoldenrod ;
 }
+.Home-footer{
+    width: 100%;
+}
 
 
 /*---- main ---*/
-
-.text-box{
-    padding: 5%;
+#aboutmetxtbox{
+    padding: 6%;
 }
 .text-box h2{
     color: #ffffff;
@@ -178,6 +180,8 @@ h4{
 .text-box p{
     color: #ffffff;
     font-size: 35px;
+    line-height: 40px;
+    text-align: center;
 }
  #home{
     display: flex;
@@ -200,7 +204,7 @@ h4{
     align-items: center;
 }
 
-#project{
+#bgProject{
 
     display: flex;
     background-color: #000000;
@@ -296,6 +300,26 @@ h4{
 
 }
 
+.image-box span video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.image-box span embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 .image-box img.paused {
     animation-play-state: paused;
  }
@@ -380,7 +404,13 @@ h4{
         text-align: center;
         align-items: center;
     }
-
+    .image-box{
+        width: 200px;
+        height: 200px;
+    }
     
+    .image-box span{
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(100%vw);   
 
+    }
 }
