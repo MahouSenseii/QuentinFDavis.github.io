@@ -1,5 +1,17 @@
 .nav-link {
     color: #fff ;
+    font-size: 27px;
+}
+
+.nav-item{
+    padding-left:80px;
+}
+
+.text-bold{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .nav-link:hover{
@@ -10,7 +22,7 @@
     padding: 4px;
     padding-left: 20px;
     left: 0;
-    font-size: 50px;
+    font-size: 80px;
     color: darkgoldenrod;
     font-family: "Times New Roman", Times, serif;
     text-decoration: underline;
@@ -19,7 +31,7 @@
 #navbarNav{
         position: fixed;
         right: 0;
-        padding-right: 20px;
+        padding-right: 80px;
 }
 
 .navbar-brand:hover{
@@ -42,8 +54,8 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100%;
+    width: +2000px;
 }
 
 /*----------footer-----------*/
@@ -71,14 +83,16 @@ nav{
 
 }
 
+
+
 .myOffer{
     width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
-    background-color: #000000;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/Banner2.png);
+    padding-top: 0;
+    background-color: transparent;
     background-repeat: no-repeat;
+    
     
 }
 h3{
@@ -93,7 +107,6 @@ p{
     padding: 10px;
 }
 .row{   
-    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -105,11 +118,15 @@ p{
     padding: 20px 12px;
     box-sizing: border-box;
     color: #fff;
+    
 
 
 }
+
+
 .offer-col h5{
     color: darkgoldenrod;
+    text-align: center;
 }
 .General-Skills{
     padding: 0;
@@ -125,16 +142,52 @@ p{
     
 }
 .General-Skills li{
-    font-size: 20px;
+    font-size: 30px;
    text-align:  center;
 }
 .Programming-Skills li {
-    font-size: 20px;
+    font-size: 30px;
     text-align:  center;
+
 }
+
+.offer-col ul{
+    animation: fadeIn 15s;
+    -webkit-animation: fadeIn 15s;
+    -moz-animation: fadeIn 15s;
+    -o-animation: fadeIn 15s;
+    -ms-animation: fadeIn 15s;
+}
+
 .Unreal-Skills li {
-    font-size: 20px;
+    font-size: 30px;
     text-align:  center;
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .offer-col li {
     list-style: none;
@@ -161,29 +214,41 @@ h4{
 
 .footer2 .fa{
     color: darkgoldenrod;
+    padding-left: 60px;
 }
 .footer2 p {
     font-size: 20px;
     color:#ffffff;
 }
 
-.Home-footer .footer1 p{
+.text-box .footer1 p{
     color: darkgoldenrod;
+    width: 100%;
     font-size: 60px;
     text-decoration: underline;
 }
 
-.Home-footer .footer1 h4{
+.text-box .footer1{
+width: 100%;
+margin-top: 0;
+padding-top: 100px;
+}
+
+.text-box .footer1 h4{
     color:darkgoldenrod ;
 }
 .Home-footer{
     width: 100%;
 }
+.Home-footer p{
+    padding-left: 60px;
+}
 
 
 /*---- main ---*/
 #aboutmetxtbox{
-    padding: 6%;
+    padding: 10%;
+    width: 100%;
 }
 .text-box h2{
     color: #ffffff;
@@ -194,10 +259,12 @@ h4{
     font-size: 100px;
 }
 .text-box p{
+    display:inline-block;
     color: #ffffff;
     font-size: 35px;
     line-height: 40px;
     text-align: center;
+
 }
  #home{
     display: flex;
@@ -211,6 +278,7 @@ h4{
 
 #about{
     display: flex;
+    
     background-color: #000000;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)), url(Images/codiing3.jpg);
     background-repeat: no-repeat;
@@ -240,32 +308,48 @@ h4{
 
 /*---- About me ----*/
 
-.Skills h5, .About-Me h5{
+ .About-Me h5{
     color: darkgoldenrod;
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
 }
 
+.col-sm-4{
+    padding: 60px;
+}
+
+
+.All-Skills{
+    top: 0;
+    padding-top: -50%;
+    height: 100%;
+}
 .About-Me p{
     text-align: left;
-    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     line-height: 3vh;
     padding-left: 65px;
+    font-family: "Times New Roman", Times, serif;
 
 }
 .Skills .skill-header{
     font-size: 30px;
     color: darkgoldenrod;
     list-style: none;
+    font-weight: bolder;
     padding-left: 30px;
+    text-align: center;
 
 }
 
 .Skills .skill-notes{
     text-align: left;
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(255, 255, 255);
+    line-height: 3vh;
     list-style: none;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .container2{
@@ -390,9 +474,9 @@ h4{
     
 }
 .comment-form input, .comment-form textarea{
-    width: 25%;
+    width: 40%;
     padding: 10px;
-    margin: 15px;
+    margin: 20px;
     box-sizing: border-box;
     border: none;
     outline: none;
@@ -401,10 +485,13 @@ h4{
     color: #ffffff;
     background:linear-gradient(#ffffff, #ffffff) center bottom 5px /calc(100% - 10px) 2px no-repeat;
     background-color: transparent;
-    padding: 10px;
-
 
 }
+
+.comment-form textarea{
+    margin-top: 0px;
+}
+
 .comment-form ::-webkit-input-placeholder{
     font-size: 20px;
     color: #ffffff;
@@ -415,7 +502,7 @@ h4{
     font-size: 30px;
     letter-spacing: 1px;
     color: #ffffff;
-    padding: 26px 150px;
+    padding: 30px 150px;
     position: relative;
     cursor: pointer;
     display: inline-block;
