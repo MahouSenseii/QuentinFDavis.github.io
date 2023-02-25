@@ -3,8 +3,17 @@
     font-size: 27px;
 }
 
+#navbarNav {
+    position: fixed;
+    right: 0px;
+    padding-right: 80px;
+}
 .nav-item{
-    padding-left:80px;
+    padding-right: 80px;
+}
+
+.navbar-nav{
+    padding-right: 80px;
 }
 
 .text-bold{
@@ -19,20 +28,16 @@
 }
 .navbar-brand{
     position: absolute;
-    padding: 4px;
-    padding-left: 20px;
-    left: 0;
+    left: 0px;
     font-size: 80px;
     color: darkgoldenrod;
     font-family: "Times New Roman", Times, serif;
+    padding: 4px 4px 4px 20px;
     text-decoration: underline;
 }
 
-#navbarNav{
-        position: fixed;
-        right: 0;
-        padding-right: 80px;
-}
+
+
 
 .navbar-brand:hover{
     color: #ffffff;
@@ -47,15 +52,11 @@ nav{
 
 }
 
-.navbar-toggler{
-    color: #ffffff;
-}
 .text-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: +2000px;
 }
 
 /*----------footer-----------*/
@@ -267,6 +268,7 @@ padding-top: 100px;
 
 }
  #home{
+    width: 100%;
     display: flex;
     background-color: #000000;
     background-image: linear-gradient(rgba(19, 19, 19, 0.7),rgba(4,9,30,0.7)), url(Images/Controller.jpg);
@@ -515,87 +517,191 @@ padding-top: 100px;
     transition:2s;
     
 }
+
 @media(max-width: 700px){
-    .text-box h1{
-        font-size: 40px;
+
+    .navbar-toggler-icon{
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    .navbar-toggler{
+        position: absolute;
+        right: 20px;
+        top: 35px;
+    }
+
+    .navbar-brand{
+        font-size: 30px;
+    }
+
+    .text-box{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    
     }
     .text-box h2{
         font-size: 20px;
     }
-    .text-box p{
-        font-size: 15px;
+    .text-box h1{
+       font-size: 45px;
     }
-    .footer1 .myOffer p{
+    .text-box p{
         font-size: 30px;
     }
-    .myOffer{
-        text-align: center;
+   
+
+    .Home-footer{
+        width: 100%;
     }
-    .Skills .skill-notes{
-        font-size: 15px;
+    #navbarNav{
+        position: fixed;
+        left: 0;
+        top: 80px;
+        padding-right: 0;
+        background-color: #000000;
+        width: 100%;
     }
+
 
     .text-box{
-        text-align: center;
-        padding-top: 30%;
-    }
-    .skill-notes{
-        text-align: center;
+        padding-top: 0;
+       justify-content: center;
+       width: 100%;
     }
 
-    .Skills{
-        font-size: 20px;
-        
+    #aboutmetxtbox{
+        padding: 0;
     }
-    .About-Me{
-        font-size: 20px;
+
+    .row{
+        width: 100%;
+        justify-content: center;
+    }
+    .text-box .footer1 {
+        padding: 0%;
+    }
+
+
+
+    .About-Me h5{
+        padding-top: 100px;
+        font-size: 30px;
+        padding-left: 0;
     }
     .About-Me p{
-        font-size: 15px;
-    }
-    .break{
-        display: none;
-    }
-    .Aboutheader{
-        min-height: 300vh;
-    }
-
-    .About-Me{
-        font-size:  20px;
-        text-align: center;
-
-
-    }
-    .About-Me p{
-        text-align: center;
+        text-align: left;
         line-height: 20px;
         font-size: 16px;
-    }
-    .All-Skills{
-        font-size: 20px;
-        text-align: center;
-        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
 
-    .All-Skills .skill-notes{
-        list-style: none;
-        font-size: 20px;
-    }
-    .All-Skills .skill-header{
-        font-size: 30px;
-    }
-    .offer-col{
+    .All-Skills li{
         width: 100%;
-        text-align: center;
-        align-items: center;
+        justify-content: center;
+        
     }
-    .image-box{
-        width: 200px;
-        height: 200px;
+
+    .col-sm-4{
+        padding: 0;
+    }
+    .Skills .skill-header{
+        justify-content: center;
     }
     
-    .image-box span{
-        transform: rotateY(calc(var(--i) * 45deg)) translateZ(100%vw);   
+    .Skills .skill-notes{
+        font-size: 16px;
+    }
+
+    .footer2{
+        text-align:left;
+        padding-left: 20px;
+    }
+    .Home-footer p{
+        padding-left: 90px;
+    }
+
+    .contact-box h5{
+        font-size: 20px;
+    }
+    .comment-form input{
+        width: 100%;
+    }
+
+    .comment-form textarea{
+        width: 100%;
+    }
+
+    .comment-box button{
+        padding: 20px 60px;
+    }
+    object{
+        width: 80%;
+        height: 50%;
+    }
+    object p{
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .image-box{
+        position: relative;
+        width: 400px;
+        height: 400px;
+        transform-style: none;
+        animation: none;
 
     }
+
+    .image-box span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: none;
+        transform: none;   
+        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004 );
+    }
+
+    .mySlides {display:none}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+    
+
+    .w3-left{
+        position:absolute;
+
+        font-size: 30px;
+        color: #ffffff;
+        left: 0;
+        padding-top: 50%;
+
+        z-index: 1000;
+    }
+
+    .w3-left:hover{
+        color: darkgoldenrod;
+    }
+
+    .w3-right{
+        position:absolute;
+        font-size: 30px;
+        color: #ffffff;
+        padding-top: 50%;
+        right: 0;
+        z-index: 1000;
+    }
+    
+    .w3-right:hover{
+        color: darkgoldenrod;
+    }
+
+
 }
