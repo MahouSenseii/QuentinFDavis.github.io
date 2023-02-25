@@ -12,7 +12,7 @@
     <script src="script.js"></script>
 
 </head>
-<body class="body min-vh-200 d-flex flex-column " id="bgProject">
+<body class="body min-vh-200 d-flex flex-column " id="bgContact">
 <header>
   <!-- HTML code for navigation bar -->
 <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top">
@@ -42,20 +42,19 @@
       </div>
     </div>
 </header>
-<main class="d-flex align-items-center justify-content-center min-vh-100 " id="project">
-    <div class="image-box" id="image-box">
-        <span  style="--i:1"><embed  src="http://pixidev.azurewebsites.net/VisualNovel/FirstFive"></span>
-        <span style="--i:2"><img src="Images/Website.png"></span>
-        <span style="--i:3"><video src="Images/RandomLoot.mp4" autoplay loop ></span>
-        <span style="--i:4"><img src="Images/BGCode.png"></span>
-        <span style="--i:5"><img src="Images/NoContent.jpg"></span>
-        <span style="--i:6"><img src="Images/NoContent.jpg"></span>
-        <span style="--i:7"><img src="Images/NoContent.jpg"></span>
-        <span style="--i:8"><img src="Images/NoContent.jpg"></span>
-
+<section class="contact-box d-flex align-items-center justify-content-center min-vh-100">
+    <div class="comment-box">
+        <h5 class="aboutmefooter">LET'S CREATE SOMETHING TOGETHER!</h5>
+        <form action=form-handler.php class="comment-form" id="Contact" method="post">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea placeholder="Leave me a message." name="message"></textarea>
+            <br>
+            <button type="submit" class="submit-btn span 12" >Submit</button>
+        </form>
     </div>
-
-</main>
+</section>
 <footer class="Home-footer">
     <div class="footer2">
         <a href="https://www.facebook.com/quentin.davis.75286/" class="fa fa-facebook"></a>

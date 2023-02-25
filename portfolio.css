@@ -1,12 +1,14 @@
 .nav-link {
     color: #fff ;
-    right: 0;
 }
 
 .nav-link:hover{
     color: darkgoldenrod;
 }
 .navbar-brand{
+    position: absolute;
+    padding: 4px;
+    padding-left: 20px;
     left: 0;
     font-size: 50px;
     color: darkgoldenrod;
@@ -14,9 +16,23 @@
     text-decoration: underline;
 }
 
+#navbarNav{
+        position: fixed;
+        right: 0;
+        padding-right: 20px;
+}
+
+.navbar-brand:hover{
+    color: #ffffff;
+}
+
 .navbar-toggler-icon{
     color: #ffffff;
     background-color: darkgoldenrod;
+}
+nav{
+    height: 90px;
+
 }
 
 .navbar-toggler{
@@ -329,7 +345,89 @@ h4{
 .image-box.is-flipped {
     transform: rotateY(180deg);
 }
+.contact-box h5{
+    font-size: 60px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  padding-bottom: 100px;
+}
 
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px #bba319, 0 0 60px #bba319, 0 0 70px #bba319;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff4da6, 
+                   0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+    }
+  }
+#bgContact{
+    display: flex;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(56, 67, 81, 0.7),rgba(4,9,30,0.7)), url(Images/Space.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-box{
+    width: 100%;
+}
+
+.comment-box {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.comment-form input, .comment-form textarea{
+    width: 25%;
+    padding: 10px;
+    margin: 15px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    background:linear-gradient(#ffffff, #ffffff) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+    background-color: transparent;
+    padding: 10px;
+
+
+}
+.comment-form ::-webkit-input-placeholder{
+    font-size: 20px;
+    color: #ffffff;
+}
+.comment-box button{
+    border: 1px solid #ffffff;
+    background: transparent;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 26px 150px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1em;
+    text-align: center;
+}
+.comment-box button:hover{
+    border: 1px solid  rgb(65, 47, 1);
+    background: darkgoldenrod;
+    transition:2s;
+    
+}
 @media(max-width: 700px){
     .text-box h1{
         font-size: 40px;
