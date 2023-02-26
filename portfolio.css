@@ -572,6 +572,10 @@ padding-top: 100px;
        width: 100%;
     }
 
+    .text-box p{
+        font-size: 20px;
+    }
+
     #aboutmetxtbox{
         padding: 0;
     }
@@ -594,8 +598,12 @@ padding-top: 100px;
     .About-Me p{
         text-align: left;
         line-height: 20px;
-        font-size: 16px;
+        font-size: 19px;
         justify-content: center;
+    }
+
+    .offer-col{
+        width: 100%;
     }
 
     .All-Skills li{
@@ -670,38 +678,18 @@ padding-top: 100px;
         -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004 );
     }
 
-    .mySlides {display:none}
-    .w3-left, .w3-right, .w3-badge {cursor:pointer}
-    .w3-badge {height:13px;width:13px;padding:0}
-    
+    .image-box {
+        position: relative;
 
-    .w3-left{
-        position:absolute;
-
-        font-size: 30px;
-        color: #ffffff;
-        left: 0;
-        padding-top: 50%;
-
-        z-index: 1000;
-    }
-
-    .w3-left:hover{
-        color: darkgoldenrod;
-    }
-
-    .w3-right{
-        position:absolute;
-        font-size: 30px;
-        color: #ffffff;
-        padding-top: 50%;
-        right: 0;
-        z-index: 1000;
-    }
-    
-    .w3-right:hover{
-        color: darkgoldenrod;
-    }
-
-
+      }
+      
+      .mySlides {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      
+      .mySlides:first-child {
+        opacity: 100%;
+      }
 }
