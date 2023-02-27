@@ -119,9 +119,7 @@ p{
     padding: 20px 12px;
     box-sizing: border-box;
     color: #fff;
-    
-
-
+    line-height: 45px;
 }
 
 
@@ -288,6 +286,14 @@ padding-top: 100px;
     justify-content: center;
     position: relative;
     align-items: center;
+}
+
+object p{
+    width: 100%;
+    font-size: 40px;
+    line-height: 30px;
+    justify-content: center;
+    text-align: center;
 }
 
 #bgProject{
@@ -471,7 +477,8 @@ padding-top: 100px;
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 200px;
+    margin-bottom: 120px;
     
 }
 .comment-form input, .comment-form textarea{
@@ -522,7 +529,11 @@ padding-top: 100px;
     .navbar-toggler-icon{
         position: absolute;
         right: 20px;
-        top: 5px;
+        top: 0px;
+    }
+
+    .nav-item:checked{
+        color: darkgoldenrod;
     }
 
     .navbar-toggler{
@@ -603,6 +614,7 @@ padding-top: 100px;
 
     .offer-col{
         width: 100%;
+        flex-basis: 0%;
     }
 
     .All-Skills li{
@@ -624,10 +636,14 @@ padding-top: 100px;
 
     .footer2{
         text-align:left;
-        padding-left: 20px;
+        padding-left: 0px;
     }
     .Home-footer p{
         padding-left: 90px;
+    }
+
+    .comment-form{
+        margin-left: 0;
     }
 
     .contact-box h5{
@@ -658,8 +674,8 @@ padding-top: 100px;
 
     .image-box{
         position: relative;
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 200px;
         animation: none;
 
     }
